@@ -15,7 +15,7 @@ public class Mailtest {
    Scanner input=new Scanner(System.in);
         try{
             String host ="smtp.gmail.com" ;
-            String user = "bosecybert@gmail.com";
+            String user = "**************your mail-id*********";
             System.out.println("enter the password.....");
             String pass =input.nextLine();
             System.out.println("enter the to address.....");
@@ -23,7 +23,7 @@ public class Mailtest {
             String cc;
             System.out.println("cc:");
             cc=input.nextLine();
-            String from = "bosecybert@gmail.com";
+            String from = "*********same as of user********";
             System.out.println("enter the subject.....");
             String subject = input.nextLine();
             System.out.println("enter the message.....");
@@ -52,8 +52,8 @@ public class Mailtest {
             msg2.setText(messageText);
             
             
-              msg1.setContent("<h1>TEST IMAGE</h1>"+"<img src=1.jpg height=42 width=42>","text/html");
-              msg2.setContent("<h1>TEST IMAGE</h1>"+"<img src=1.jpg height=42 width=42>","text/html");
+              msg1.setContent("<h1>TEST IMAGE</h1>"+"<img src=****image source***** height=42 width=42>","text/html");
+              msg2.setContent("<h1>TEST IMAGE</h1>"+"<img src=****image source***** height=42 width=42>","text/html");
              
            Transport transport=mailSession.getTransport("smtp");
            transport.connect(host, user, pass);
